@@ -6,7 +6,8 @@
 
 #no_of_lines=$(( $(wc -l testing.sh | cut -d " " -f1) - 1 ))
 no_of_lines=$( $(wc -l rx_poc.log | cut -d " " -f1 )
-
+touch historical_fc_accuracy.tsv
+echo "year\tmonth\tday\tobs_tmp\tfc_temp\taccuracy\taccuracy_range" > historical_fc_accuracy.tsv
 for (( i=no_of_lines; i < 2; i-- )) ; do
 
 done

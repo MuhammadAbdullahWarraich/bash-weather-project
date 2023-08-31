@@ -3,6 +3,17 @@
 # day=$(echo $current_time | cut -d " " -f5)
 # month=$(echo $current_time | cut -d " " -f4)
 # year=$(echo $current_time | cut -d " " -f3)
+
+#no_of_lines=$(( $(wc -l testing.sh | cut -d " " -f1) - 1 ))
+no_of_lines=$( $(wc -l rx_poc.log | cut -d " " -f1 )
+
+for (( i=no_of_lines; i < 2; i-- )) ; do
+
+done
+
+
+
+
 row=$(tail -1 rx_poc.log)
 day=$(echo $row | cut -d "\t" -f3)
 month=$(echo $row | cut -d "\t" -f2)

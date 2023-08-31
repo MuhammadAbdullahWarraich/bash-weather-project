@@ -2,7 +2,7 @@
 no_of_lines=$( $(wc -l rx_poc.log | cut -d " " -f1 )
 touch historical_fc_accuracy.tsv
 echo "year\tmonth\tday\tobs_tmp\tfc_temp\taccuracy\taccuracy_range" > historical_fc_accuracy.tsv
-for (( i=$(( no_of_lines-1 )); i>2; i-- )) ; do
+for (( i=$(( no_of_lines-1 )); i>1; i-- )) ; do
 current=$(( $no_of_lines-$i ))
 row=$(tail -$current rx_poc.log)
 day=$(echo $row | cut -d " " -f3)

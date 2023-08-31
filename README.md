@@ -13,3 +13,6 @@
 4 - with the current coding, the rx_poc.sh is suppossed to be scheduled to run at noon everyday. To change that, edit the rx_poc.sh file and the cronjob scheduling.
 
 
+5 - the script fc-compare.sh requires atleast two days worth of data from the file rx_poc.log. Hence, only run/schedule to run after atleast two days after running/scheduling rx_poc.sh
+
+

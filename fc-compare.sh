@@ -16,3 +16,4 @@ accuracyRangeLabel="fair"
 else
 accuracyRangeLabel="poor"
 fi
+echo "$year\t$month\t$day\t$acTemp\t$tempDiff\t$accuracyRangeLabel" >> ./historical_fc_accuracy.tsv
